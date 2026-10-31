@@ -1,0 +1,13 @@
+# BizPredict AI - runtime dependencies
+# Python 3.10+ (developed and tested on 3.12)
+# Data handling
+pandas>=2.0,<3.0
+numpy>=1.24,<3.0
+# Dashboard
+streamlit>=1.32,<2.0
+plotly>=5.18,<6.0
+# Forecasting
+prophet>=1.1.5,<2.0            # primary engine (installs cmdstanpy)
+statsmodels>=0.14,<1.0         # Holt-Winters fallback
+# Statistics (normal quantile for safety stock)
+scipy>=1.10,<2.0
